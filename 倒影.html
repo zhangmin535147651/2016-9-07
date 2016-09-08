@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>张敏</title>
+	<link href="" rel="stylesheet">
+<style>
+	*{
+		padding:0;
+		margin:0;
+	}
+	body{
+		background:#000;
+	}
+	.box{
+		width:600px;
+		height:400px;
+		margin:0 auto;
+		position:relative;
+	}
+	.box img{
+		width:600px;
+		height:400px;
+	}
+	.on{
+		width:600px;
+		height:400px;
+		background:url(img/1.jpg) no-repeat;
+		background-size:100%;
+		margin:100px auto;
+		position:absolute;
+		left:0;
+		top:270px;
+		transform:scale(1,-1);
+		-webkit-mask:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5))
+	}
+
+</style>
+<script>
+	
+</script>
+</head>
+
+<body>
+	<div class="box">
+		<img src="img/1.jpg">
+		<span class="on"></span>
+	</div>
+</body>
+</html>

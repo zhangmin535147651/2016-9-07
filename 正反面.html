@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>张敏</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style>
+	*{
+		padding:0;
+		margin:0;
+	}
+	.box{
+		width:200px;
+		height:300px;
+		margin:0 auto;
+		position:relative;
+		/*开启3D效果*/
+		-webkit-transform-style:preserve-3d;
+		-webkit-transition:1s all ease;
+		-webkit-transform: perspective(800px) rotateY(0deg)
+	}
+	.box div{
+		width:100%;
+		height:100%;
+		font-size:30px;
+		color:#fff;
+		text-align:center;
+		line-height:300px;
+		position:absolute;
+		left:0;
+		top:0;
+	}
+	.font{
+		/*上浮*/
+		background:red;
+		transform:translateZ(1px);
+	}
+	.con{
+		/*下沉*/
+		background:green;
+		transform:translateZ(-1px) scale(-1,1);
+	}
+	.box:active{
+		-webkit-transform: perspective(800px) rotateY(180deg);
+	}
+</style>
+<script>
+	
+</script>
+</head>
+
+<body>
+<div class="box">
+	<div class="font">正面</div>
+	<div class="con">反面</div>
+</div> 
+</body>
+</html>
